@@ -42,6 +42,9 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Signika:wght@300..700&display=swap"
       rel="stylesheet"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
   </head>
   <body>
     <header>
@@ -50,13 +53,16 @@
       <nav>
         <a href="#competences">À propos</a>
         <a href="#projets">Projets</a>
-        <a>Contact</a>
+        <a href="#contact">Contact</a>
       </nav>
     </header>
     <main>
-      <div class="about" id="competences">
+      <h1>PORTFOLIO DE MEHDI</h1>
+      <section id="competences">
+        <h2>À propos</h2>
+        <div class="about">
         <div class="info">
-          <h1>MEHDI MOHAMMEDI</h1>
+          <h3>MEHDI MOHAMMEDI</h3>
           <span>Intégrateur web</span>
           <p>
             Etant passionné d'informatique depuis mon plus jeune age, je me suis
@@ -66,7 +72,7 @@
           </p>
         </div>
 
-        <section class="competences">
+        <div class="competences">
           <div class="progress-bar">
             <span> HTML <img src="./assets/images/html.webp" alt="html" /></span>
             <div class="container">
@@ -97,11 +103,18 @@
               <p class="skill react">60%</p>
             </div>
           </div>
-        </section>
+        </div>
       </div>
-      <section class="projets" id="projets">
+    </section>
+      <section id="projets">
+        <h2>Projets</h2>
+
+        <div class="projet1">
+
         <div class="description">
-        <h2>Améliorez l'interface d'un site mobile avec des animations CSS</h2>
+        <h3>Améliorez l'interface d'un site mobile avec des animations CSS </h3>
+        <a href="https://github.com/MehdiMo66/N4PROJECT" alt="lien-github-du-projet"><i class="fa-brands fa-github"></i></a>
+      
         <p>
           Le quatrième projet d'OpenClassroom a été très bénéfique dans
           mon apprentissage du developpement web. En effet, il s'agit de
@@ -138,18 +151,60 @@
           en CSS grace à la manipulation de SASS et des animations CSS ainsi que de toutes leurs fonctionnalités.
         </p>
       </div>
-      <div id="carousel">
-       
-        <i class="fa-solid fa-angle-left"></i>
-        <i class="fa-solid fa-angle-right"></i>
-        <div class="dots">
+      
+      <div class="carousel" id="carousel1">
+        <i class="fa-solid fa-angle-left" id="angle-left1"></i>
+        <i class="fa-solid fa-angle-right" id="angle-right1"></i>
+        <div class="dots" id="dots1">
         </div>
       </div>
+    </div>
+
+    <div class="projet2">
+      <div class="carousel" id="carousel2">
+        <i class="fa-solid fa-angle-left" id="angle-left"></i>
+        <i class="fa-solid fa-angle-right" id="angle-right"></i>
+        <div class="dots" id="dots2">
+        </div>
+        </div>
+        <div class="description">
+          <h3>Implémentez le front-end d'une application bancaire avec React</h3>
+          <a href="https://github.com/MehdiMo66/p10_opclrm" alt="lien-github-du-projet"><i class="fa-brands fa-github"></i></a>
+        
+          <p>
+            Dans le cadre de ce projet, j'ai développé le front-end d'une application bancaire en utilisant React. Mon objectif était de créer une interface utilisateur dynamique et réactive pour offrir une expérience utilisateur optimale.
+
+          </p>
+          <p>
+           Grâce à ce projet, j'ai pu mettre en pratique mes compétences en développement front-end en utilisant React et Redux. J'ai créé une architecture solide pour gérer l'état global de l'application et faciliter la communication entre les différents composants.
+
+          </p>
+          <p>
+            J'ai intégré le contenu de l'application en utilisant React Router, ce qui m'a permis de gérer la navigation de manière fluide et de créer des routes spécifiques pour les différentes fonctionnalités de l'application.
+          </p>
+          <p>
+            J'ai également développé la gestion de l'authentification des utilisateurs, en permettant la connexion et la déconnexion, ainsi que l'accès au profil utilisateur après une authentification réussie. J'ai également implémenté la fonctionnalité permettant à l'utilisateur de modifier son pseudo.
+
+          </p>
+          <p>En résumé, ce projet m'a permis de développer mes compétences en développement web avec React, Redux et React Router, tout en créant une interface utilisateur réactive et conviviale pour une application bancaire complète. J'ai appris à gérer l'état global de l'application et à gérer l'authentification des utilisateurs.</p>
+        </div>
+       
+    </div>
+
       </section>
     </main>
-    <footer></footer>
+    <footer>
+      <img src="./assets/images/Mehdi-logo.webp" alt="logo de Mehdi" />
+      <div class="contact" id="contact">
+      <a href="mailto:mehdi.mohammedi@hotmail.fr"><i class="fa-regular fa-envelope"></i></a>
+      <a href="http://linkedin.com/in/mehdi-mohammedi93"><i class="fa-brands fa-linkedin-in"></i></a>
+      <a href="https://github.com/MehdiMo66"><i class="fa-brands fa-github"></i></a> 
+      
+      </div>
+
+    </footer>
     
-    <script src="./assets/index.js" defer></script>
-   
+    <script src="./assets/carousel1.js" defer></script>
+    <script src="./assets/carousel2.js" defer></script>
   </body>
 </html>

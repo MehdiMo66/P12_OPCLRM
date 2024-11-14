@@ -16,8 +16,9 @@ const slides = [
 ]
 
 // Img + Text
-const banner = document.getElementById("carousel");
+const banner = document.getElementById("carousel1");
 let index = 0;
+console.log(banner)
 
 const slide = document.createElement("img");
 slide.classList.add("banner-img");
@@ -39,8 +40,8 @@ let dotSelected = document.querySelector(`.dot${index}`);
 dotSelected.classList.add("dot_selected");
 
 //ARROWS
-const arrowLeft = document.querySelector(".fa-angle-left");
-const arrowRight = document.querySelector(".fa-angle-right");
+const arrowLeft = document.getElementById("angle-left1");
+const arrowRight = document.getElementById("angle-right1");
 
 
 function ArrowDotCLick(index) {
@@ -87,3 +88,4 @@ for (let i = 0; i < slides.length ; i++) {
 	});
 }
 
+console.log(index)

@@ -106,7 +106,10 @@ header a:hover {
   transition: 1s;
 }
 .about .info p {
-  font-size: 25px;
+  font-size: 20px;
+}
+.about .info p span {
+  color: rgb(229, 101, 39);
 }
 
 h3 {
@@ -116,7 +119,6 @@ h3 {
   margin-top: 0px;
   color: rgb(229, 101, 39);
   font-family: "Fira Code", monospace;
-  font-optical-sizing: auto;
   font-weight: 300;
   font-style: normal;
   letter-spacing: 5px;
@@ -129,7 +131,6 @@ h1 {
   margin-top: 150px;
   color: rgb(229, 101, 39);
   font-family: "Fira Code", monospace;
-  font-optical-sizing: auto;
   font-weight: 300;
   font-style: normal;
   letter-spacing: 5px;
@@ -287,8 +288,6 @@ h2 {
 }
 
 .banner-img {
-  -o-object-fit: cover;
-     object-fit: cover;
   height: 500px;
   width: 100%;
   border-radius: 15px;
@@ -299,6 +298,7 @@ h2 {
   bottom: 40px;
   display: flex;
   left: 39%;
+  bottom: 20px;
 }
 
 .dot {
@@ -309,6 +309,25 @@ h2 {
   border: 3px solid rgb(229, 101, 39);
   border-radius: 100%;
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+#dots2 {
+  left: 32%;
+  bottom: 20px;
+}
+
+.dot2 {
+  margin-inline: 5px;
+  width: 13px;
+  height: 13px;
+  background-color: rgba(255, 255, 255, 0);
+  border: 3px solid rgb(229, 101, 39);
+  border-radius: 100%;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.dot_selected2 {
+  background-color: rgb(62, 87, 79);
 }
 
 .dot_selected {
@@ -338,7 +357,8 @@ footer .contact {
   align-items: center;
   gap: 15px;
 }
-footer i, footer .fa-github {
+footer i,
+footer .fa-github {
   color: rgb(229, 101, 39);
   font-size: 30px;
 }
@@ -350,6 +370,9 @@ footer .fa-github:hover {
 }
 
 @media (max-width: 768px) {
+  h3 {
+    font-size: 21px;
+  }
   main {
     margin: 0px;
   }
@@ -365,37 +388,51 @@ footer .fa-github:hover {
     width: 100%;
     text-align: center;
   }
-  .about .info h1, .about .info p, .about .info span {
+  .about .info h1,
+  .about .info p,
+  .about .info span {
     padding: 10px;
+  }
+  .about .info p {
+    font-size: 19px;
   }
   .about .competences {
     width: 100%;
+    padding: 20px;
   }
   .about .competences .progress-bar {
     padding: 10px;
   }
-  .projets {
+  #projets {
     display: flex;
     flex-direction: column;
-    margin: 0px;
-    gap: 10px;
+    gap: 30px;
+    padding: 20px;
+  }
+  .projet1 {
+    flex-direction: column;
+    height: auto;
+  }
+  .projet1 .description {
     width: 100%;
     height: 500px;
-    align-items: center;
     padding: 0px;
   }
-  .projets .description {
+  .projet1 .carousel {
     width: 100%;
-    text-align: center;
-    overflow-y: scroll;
-    scrollbar-color: rebeccapurple green;
-    scrollbar-width: thin;
+    height: 500px;
   }
-  .projets .description h2, .projets .description p {
-    padding: 10px;
+  .projet2 {
+    flex-direction: column;
+    height: auto;
   }
-  .projets #carousel {
+  .projet2 .description {
     width: 100%;
-    padding: 10px;
+    height: 500px;
+    padding: 0px;
+  }
+  .projet2 .carousel {
+    width: 100%;
+    height: 500px;
   }
 }/*# sourceMappingURL=style.css.map */

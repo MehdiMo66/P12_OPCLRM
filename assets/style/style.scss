@@ -1,46 +1,5 @@
-@import "../keyframe.scss";
-
-@mixin border {
-  border-radius: 15px;
-}
-
-@mixin section-background {
-  background: radial-gradient(
-    circle,
-    rgb(112 77 37 / 69%) 0%,
-    rgba(42, 79, 70, 0.52) 100%
-  );
-}
-
-@mixin title {
-  color: rgba(229, 101, 39);
-  font-family: "Fira Code", monospace;
-  font-weight: 300;
-  font-style: normal;
-  letter-spacing: 5px;
-}
-
-@mixin projet-description {
-  width: 60%;
-  box-shadow: 1px 1px 20px 1px rgba(229, 101, 39);
-  padding: 10px;
-  overflow-y: scroll;
-  scrollbar-color: rgba(229, 101, 39) rgb(181 119 89 / 0%);
-}
-
-@mixin projet-carousel {
-  width: 40%;
-  box-shadow: 1px 1px 20px 1px rgba(229, 101, 39);
-  position: relative;
-}
-
-@mixin projets {
-  display: flex;
-  flex-direction: row;
-  gap: 40px;
-  margin-top: 40px;
-  height: 500px;
-}
+@import "./keyframe.scss";
+@import "./mixin.scss";
 
 body {
   background-image: url("../images/backgroud.webp");
@@ -64,6 +23,7 @@ header {
   z-index: 10;
 
   img {
+
     width: 60px;
     display: block;
     margin: auto;
@@ -87,6 +47,7 @@ header {
   a:hover {
     border-top: 4px rgb(255, 255, 255) solid;
     font-size: 25px;
+    
   }
 }
 

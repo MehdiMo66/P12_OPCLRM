@@ -370,6 +370,9 @@ footer .fa-github:hover {
 }
 
 @media (max-width: 768px) {
+  h1 {
+    font-size: 35px;
+  }
   h3 {
     font-size: 21px;
   }
@@ -409,14 +412,19 @@ footer .fa-github:hover {
     gap: 30px;
     padding: 20px;
   }
+  #projets h2 {
+    margin-bottom: 0px;
+  }
   .projet1 {
     flex-direction: column;
     height: auto;
+    align-items: center;
+    margin-top: 0px;
   }
   .projet1 .description {
     width: 100%;
     height: 500px;
-    padding: 0px;
+    padding: 5px;
   }
   .projet1 .carousel {
     width: 100%;
@@ -425,11 +433,12 @@ footer .fa-github:hover {
   .projet2 {
     flex-direction: column;
     height: auto;
+    align-items: center;
   }
   .projet2 .description {
     width: 100%;
     height: 500px;
-    padding: 0px;
+    padding: 5px;
   }
   .projet2 .carousel {
     width: 100%;

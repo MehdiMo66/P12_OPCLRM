@@ -23,7 +23,6 @@ header {
   z-index: 10;
 
   img {
-
     width: 60px;
     display: block;
     margin: auto;
@@ -47,7 +46,6 @@ header {
   a:hover {
     border-top: 4px rgb(255, 255, 255) solid;
     font-size: 25px;
-    
   }
 }
 
@@ -332,7 +330,12 @@ footer {
     color: rgb(0, 0, 0);
   }
 }
+
 @media (max-width: 768px) {
+  h1 {
+    font-size: 35px;
+  }
+
   h3 {
     font-size: 21px;
   }
@@ -379,16 +382,22 @@ footer {
     flex-direction: column;
     gap: 30px;
     padding: 20px;
+
+    h2 {
+      margin-bottom: 0px;
+    }
   }
 
   .projet1 {
     flex-direction: column;
     height: auto;
+    align-items: center;
+    margin-top: 0px;
 
     .description {
       width: 100%;
       height: 500px;
-      padding: 0px;
+      padding: 5px;
     }
 
     .carousel {
@@ -400,11 +409,12 @@ footer {
   .projet2 {
     flex-direction: column;
     height: auto;
+    align-items: center;
 
     .description {
       width: 100%;
       height: 500px;
-      padding: 0px;
+      padding: 5px;
     }
 
     .carousel {
